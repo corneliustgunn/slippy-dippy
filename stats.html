@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is Dippy Slippy?</title>
+    <title>Dippy Stats - Is Dippy Slippy?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <!-- 90s Marquee -->
     <div class="marquee-container">
         <marquee scrollamount="5" bgcolor="#FFFF00">
-            *** WELCOME TO THE OFFICIAL UNOFFICIAL DIPPY WEATHER STATION *** CHECK IF DIPPY IS SLIPPY *** UPDATED EVERY FEW MINUTES *** SIGN MY GUESTBOOK ***
+            *** HISTORICAL DIPPY DATA *** FUN FACTS ABOUT PITTSBURGH PRECIPITATION *** HOW WET IS DIPPY? ***
         </marquee>
     </div>
 
@@ -22,7 +22,7 @@
             <td colspan="2" align="center" bgcolor="#000080">
                 <h1 style="color: #FFFFFF; font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;">
                     <font face="Comic Sans MS, Chalkboard SE, sans-serif" color="#FFFFFF">
-                        Dippy the Dinosaur Weather
+                        Dippy's Weather History
                     </font>
                 </h1>
             </td>
@@ -35,7 +35,7 @@
                 <center>
                     <font face="Times New Roman, serif" size="3">
                         <b>Menu</b><br><br>
-                        <a href="#">Home</a><br>
+                        <a href="index.html">Home</a><br>
                         <a href="stats.html">Dippy Stats</a><br>
                         <a href="https://carnegiemnh.org/">Carnegie Museum</a><br>
                         <a href="https://en.wikipedia.org/wiki/Dippy_(statue)">About Dippy</a><br>
@@ -51,20 +51,46 @@
             <!-- Main Display -->
             <td width="600" align="center" valign="top" bgcolor="#FFFFFF">
                 <br>
-                <h2 id="status-text">Checking Dippy...</h2>
+                <h2>Climatological Facts</h2>
+                <br>
+                <font face="Times New Roman, serif" size="4">
+                    <p>Did you know Pittsburgh is one of the cloudiest cities in the US? Poor Dippy!</p>
+                </font>
 
-                <div class="image-frame">
-                    <img id="dippy-image" src="assets/dippy_normal.jpg" alt="Dippy the Dinosaur" width="500" border="5" style="border-color: red;">
-                </div>
+                <table border="1" cellpadding="5" cellspacing="2" bgcolor="#FFFFCC" width="80%">
+                    <tr bgcolor="#000080">
+                        <th><font color="white">Year</font></th>
+                        <th><font color="white">Days with Precipitation</font></th>
+                        <th><font color="white">Dippy Status</font></th>
+                    </tr>
+                    <tr>
+                        <td align="center">2024</td>
+                        <td align="center">154</td>
+                        <td align="center">Very Slippy</td>
+                    </tr>
+                    <tr>
+                        <td align="center">2023</td>
+                        <td align="center">142</td>
+                        <td align="center">Moderately Slippy</td>
+                    </tr>
+                    <tr>
+                        <td align="center">1999</td>
+                        <td align="center">130</td>
+                        <td align="center">Party like it's 1999 (Wet)</td>
+                    </tr>
+                    <tr>
+                        <td align="center">1899</td>
+                        <td align="center">?</td>
+                        <td align="center">Dippy was created!</td>
+                    </tr>
+                </table>
 
                 <br>
-                <div id="weather-details">
-                    <font face="Courier New, monospace" size="4">
-                        <b>Current Conditions:</b><br>
-                        <span id="condition-text">Loading...</span><br>
-                        Temp: <span id="temp-text">--</span>&deg;F
-                    </font>
-                </div>
+                <br>
+                <font face="Comic Sans MS" size="2">
+                    <i>Data source: The Old Farmer's Almanac & User Guesses</i>
+                </font>
+                <br>
                 <br>
             </td>
         </tr>
@@ -73,14 +99,12 @@
         <tr>
             <td colspan="2" align="center" bgcolor="#000080">
                 <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
-                    Created by Neil &copy; 1999 (Just Kidding, it's 2026)<br>
-                    You are visitor number:
-                    <span style="background-color: black; color: red; font-family: 'Courier New', monospace; padding: 2px; border: 1px solid white;">034869</span>
+                    Created by Jules &copy; 1999 (Just Kidding, it's 2025)<br>
+                    <a href="index.html" style="color: yellow;">Return to Home</a>
                 </font>
             </td>
         </tr>
     </table>
 
-    <script src="script.js"></script>
 </body>
 </html>

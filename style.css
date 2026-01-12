@@ -72,7 +72,7 @@ h2 {
     height: auto;
 }
 
-/* Rain Effect Overlay (if needed) */
+/* Rain Effect Overlay (CSS-based) */
 .rain-overlay {
     position: relative;
 }
@@ -84,7 +84,25 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/rain_overlay.gif'); /* Rain GIF */
-    opacity: 0.5;
+    /* Create rain using a repeating gradient */
+    background-image: repeating-linear-gradient(
+        180deg,
+        transparent,
+        transparent 5px,
+        rgba(0, 0, 255, 0.5) 5px,
+        rgba(0, 0, 255, 0.5) 20px
+    );
+    background-size: 100% 200%;
+    opacity: 0.3;
     pointer-events: none;
+    animation: rain-fall 0.3s linear infinite;
+}
+
+@keyframes rain-fall {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
 }
