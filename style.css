@@ -1,0 +1,90 @@
+body {
+    background-color: #000000;
+    background-image: url('assets/bg_stars.gif'); /* Starfield background */
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fallback for background if gif is too annoying or breaks */
+body {
+    background-color: #000033;
+}
+
+table {
+    border: 5px ridge #808080;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:hover {
+    color: #FF0000;
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur116.cur'), auto; /* Fun cursor */
+}
+
+.marquee-container {
+    background-color: #FFFF00;
+    border-bottom: 2px solid #000000;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+h1 {
+    text-shadow: 2px 2px #000000;
+}
+
+h2 {
+    color: #FF0000;
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+    text-transform: uppercase;
+    text-decoration: blink; /* Won't work in modern browsers but it's the thought that counts */
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.image-frame {
+    border: 3px solid blue;
+    padding: 5px;
+    background-color: #FFFFCC;
+    display: inline-block;
+}
+
+#dippy-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rain Effect Overlay (if needed) */
+.rain-overlay {
+    position: relative;
+}
+
+.rain-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/rain_overlay.gif'); /* Rain GIF */
+    opacity: 0.5;
+    pointer-events: none;
+}

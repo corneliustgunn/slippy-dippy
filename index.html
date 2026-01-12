@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Dippy Slippy?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 90s Marquee -->
+    <div class="marquee-container">
+        <marquee scrollamount="5" bgcolor="#FFFF00">
+            *** WELCOME TO THE OFFICIAL UNOFFICIAL DIPPY WEATHER STATION *** CHECK IF DIPPY IS SLIPPY *** UPDATED EVERY FEW MINUTES *** SIGN MY GUESTBOOK ***
+        </marquee>
+    </div>
+
+    <!-- Main Table Layout (Classic 90s) -->
+    <table align="center" width="800" border="1" cellpadding="10" cellspacing="0" bgcolor="#C0C0C0">
+        <!-- Header -->
+        <tr>
+            <td colspan="2" align="center" bgcolor="#000080">
+                <h1 style="color: #FFFFFF; font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;">
+                    <font face="Comic Sans MS, Chalkboard SE, sans-serif" color="#FFFFFF">
+                        Dippy the Dinosaur Weather
+                    </font>
+                </h1>
+            </td>
+        </tr>
+
+        <!-- Content -->
+        <tr>
+            <!-- Sidebar -->
+            <td width="200" valign="top" bgcolor="#99CCFF">
+                <center>
+                    <font face="Times New Roman, serif" size="3">
+                        <b>Menu</b><br><br>
+                        <a href="#">Home</a><br>
+                        <a href="https://carnegiemnh.org/">Carnegie Museum</a><br>
+                        <a href="https://en.wikipedia.org/wiki/Dippy_(statue)">About Dippy</a><br>
+                        <br>
+                        <hr>
+                        <br>
+                        <img src="assets/under_construction.gif" alt="Under Construction" id="construction-gif"><br>
+                        <small>Pardon our dust!</small>
+                    </font>
+                </center>
+            </td>
+
+            <!-- Main Display -->
+            <td width="600" align="center" valign="top" bgcolor="#FFFFFF">
+                <br>
+                <h2 id="status-text">Checking Dippy...</h2>
+
+                <div class="image-frame">
+                    <img id="dippy-image" src="assets/dippy_normal.jpg" alt="Dippy the Dinosaur" width="500" border="5" style="border-color: red;">
+                </div>
+
+                <br>
+                <div id="weather-details">
+                    <font face="Courier New, monospace" size="4">
+                        <b>Current Conditions:</b><br>
+                        <span id="condition-text">Loading...</span><br>
+                        Temp: <span id="temp-text">--</span>&deg;F
+                    </font>
+                </div>
+                <br>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+            <td colspan="2" align="center" bgcolor="#000080">
+                <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">
+                    Created by Jules &copy; 1999 (Just Kidding, it's 2025)<br>
+                    You are visitor number:
+                    <span style="background-color: black; color: red; font-family: 'Courier New', monospace; padding: 2px; border: 1px solid white;">034821</span>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
